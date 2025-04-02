@@ -1,0 +1,80 @@
+@font-face{
+    font-family: 'FZFW' ;  /* 自定义字体名称 */
+    src: url('FZFWZhu.ttf'); /* 引入字体文件的路径 */
+  }
+  /*应用在body体里，放在第一个，font-family会按顺序使用字体族。如果第一个没找到就会找第二个，以此类推。*/
+  body {
+  font-family: FZFW,-apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "STZhongsong", "Lantinghei SC", sans-serif
+  }
+  
+  /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+::-webkit-scrollbar {  
+  width: 4px;  
+  height: 4px;  
+  background-color: #181C27;    
+}  
+
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track {  
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+  border-radius: 10px;  
+  background-color: #181C27;
+}  
+
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb {  
+  border-radius: 10px;  
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+  background-color: #AAA;  
+}
+
+/*鼠标在滑块上方时滑块变色*/  
+::-webkit-scrollbar-thumb:hover {
+  background-color: #808080;
+}
+
+.index-img {
+  transition: .4s;           /*动画时间*/
+}
+.index-card:hover .index-img {
+  transform: scale(1.05);    /*放大倍数*/
+}
+
+
+/*指针样式*/
+body {
+  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
+      default;
+}
+/*链接小手样式*/
+a,
+img {
+  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+      default;
+}
+
+
+.tab-spaced .tab-pane{
+  margin:20px
+}
+.text-spaced *{
+  margin:10px
+}.text-multiline{
+  white-space:pre-line;
+  text-align:justify
+}
+.progress-nomargin{
+  margin-bottom:0
+}
+table.table-middle td,table.table-middle th{
+  vertical-align:middle
+}
+.text-nowrap *{
+  text-wrap:none;
+  word-break:keep-all
+}
+  .td-fullsize{
+    width:100%
+}
