@@ -21,13 +21,13 @@
     <meta name="description" content="前言去年腾讯云服务器过期了，想着采用Hexo + GitHub Pages搭建一个新的博客，主题使用Fluid。 今年~~~~感觉以前搭建的未免有点过于花哨~~~~又想折腾了，于是使用Cactus重新搭建了一遍。 今年又改回来了\(￣︶￣*)) 这里记录一下自己去年使用Fluid搭建与魔改（照搬他人）blog的步骤，日后查找起来也方便。 搭建blog准备工作(1)需要有一个GitHub账号，没有可">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo-Fluid搭建与魔改纪录">
-<meta property="og:url" content="http://wakutsu0223.top/2023/02/24/Hexo-Fluid%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%AD%94%E6%94%B9%E7%BA%AA%E5%BD%95/index.html">
+<meta property="og:url" content="http://marinmoling.github.io/2023/02/24/Hexo-Fluid%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%AD%94%E6%94%B9%E7%BA%AA%E5%BD%95/index.html">
 <meta property="og:site_name" content="Marin&#39;s Blog">
 <meta property="og:description" content="前言去年腾讯云服务器过期了，想着采用Hexo + GitHub Pages搭建一个新的博客，主题使用Fluid。 今年~~~~感觉以前搭建的未免有点过于花哨~~~~又想折腾了，于是使用Cactus重新搭建了一遍。 今年又改回来了\(￣︶￣*)) 这里记录一下自己去年使用Fluid搭建与魔改（照搬他人）blog的步骤，日后查找起来也方便。 搭建blog准备工作(1)需要有一个GitHub账号，没有可">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://wakutsu0223.top/2023/02/24/Hexo-Fluid%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%AD%94%E6%94%B9%E7%BA%AA%E5%BD%95/2.png">
-<meta property="og:image" content="http://wakutsu0223.top/2023/02/24/Hexo-Fluid%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%AD%94%E6%94%B9%E7%BA%AA%E5%BD%95/1.png">
-<meta property="og:image" content="http://wakutsu0223.top/2023/02/24/Hexo-Fluid%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%AD%94%E6%94%B9%E7%BA%AA%E5%BD%95/4.png">
+<meta property="og:image" content="http://marinmoling.github.io/2023/02/24/Hexo-Fluid%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%AD%94%E6%94%B9%E7%BA%AA%E5%BD%95/2.png">
+<meta property="og:image" content="http://marinmoling.github.io/2023/02/24/Hexo-Fluid%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%AD%94%E6%94%B9%E7%BA%AA%E5%BD%95/1.png">
+<meta property="og:image" content="http://marinmoling.github.io/2023/02/24/Hexo-Fluid%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%AD%94%E6%94%B9%E7%BA%AA%E5%BD%95/4.png">
 <meta property="article:published_time" content="2023-02-24T13:53:46.000Z">
 <meta property="article:modified_time" content="2024-09-07T17:34:30.762Z">
 <meta property="article:author" content="Marin">
@@ -35,7 +35,7 @@
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="fluid">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://wakutsu0223.top/2023/02/24/Hexo-Fluid%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%AD%94%E6%94%B9%E7%BA%AA%E5%BD%95/2.png">
+<meta name="twitter:image" content="http://marinmoling.github.io/2023/02/24/Hexo-Fluid%E6%90%AD%E5%BB%BA%E4%B8%8E%E9%AD%94%E6%94%B9%E7%BA%AA%E5%BD%95/2.png">
   
   
   
@@ -81,7 +81,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"wakutsu0223.top","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"FHTmQAVBWn13Llk5ljXbHt16jlsrHy4XbEWjIBvYqd8","gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"pm5yyO8YunQZvONjYdqGHe9C-MdYXbMMI","app_key":"2tS49c6rlEo7ZDN2MREanI54","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"marinmoling.github.io","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":"FHTmQAVBWn13Llk5ljXbHt16jlsrHy4XbEWjIBvYqd8","gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"pm5yyO8YunQZvONjYdqGHe9C-MdYXbMMI","app_key":"2tS49c6rlEo7ZDN2MREanI54","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -491,7 +491,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>Hexo-Fluid搭建与魔改纪录</div>
-      <div>http://wakutsu0223.top/2023/02/24/Hexo-Fluid搭建与魔改纪录/</div>
+      <div>http://marinmoling.github.io/2023/02/24/Hexo-Fluid搭建与魔改纪录/</div>
     </div>
     <div class="license-meta">
       
