@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  name: github
+  repo: git@github.com:MarinMoLing/MarinMoLing.github.io.git  # 你的 GitHub 仓库
+  branch: main                       # 你的主分支，一般是 main 或 master
 
 # This line should *not* be indented
 publish_mode: editorial_workflow
